@@ -1,0 +1,15 @@
+.text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto,
+    sans-serif;
+
+  font-size: var(--font-size);
+  color: var(--color);
+  line-height: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}

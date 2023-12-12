@@ -1,0 +1,18 @@
+.wrapper {
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  border: var(--border);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+
+  &:hover {
+    z-index: 3;
+  }
+
+  box-shadow: var(--box-shadow);
+}
