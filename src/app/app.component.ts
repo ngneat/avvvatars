@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AvvvatarsComponent } from '@ngneat/avvvatars';
+import { AvvvatarsComponent, Style } from '@ngneat/avvvatars';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -13,5 +13,5 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'avvvatars';
   value = '@ngneat/avvvatars';
-  avStyle = 'shape';
+  avStyle: Style = 'shape';
 }

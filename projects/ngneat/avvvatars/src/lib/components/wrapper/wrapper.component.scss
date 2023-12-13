@@ -1,9 +1,9 @@
 .wrapper {
-  width: var(--width);
-  height: var(--height);
-  border-radius: var(--border-radius);
-  background-color: var(--background-color);
-  border: var(--border);
+  width: var(--ngneat-avvvatars-width);
+  height: var(--ngneat-avvvatars-height);
+  border-radius: var(--ngneat-avvvatars-border-radius);
+  background-color: var(--ngneat-avvvatars-background-color);
+  border: var(--ngneat-avvvatars-border);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -14,5 +14,5 @@
     z-index: 3;
   }
 
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--ngneat-avvvatars-box-shadow);
 }

@@ -1,10 +1,7 @@
 :host {
-  display: flex;
-}
-.shape {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
 
-  color: var(--color, currentColor);
+  color: var(--ngneat-avvvatars-color, currentColor);
 }

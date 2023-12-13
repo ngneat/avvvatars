@@ -4,7 +4,6 @@ import { WrapperProps } from '../../types';
 @Component({
   selector: 'lib-wrapper',
   standalone: true,
-  imports: [],
   templateUrl: './wrapper.component.html',
   styleUrl: './wrapper.component.scss',
 })
@@ -17,22 +16,23 @@ export class WrapperComponent implements WrapperProps {
   @Input() borderColor: string | undefined;
   @Input() radius: number | undefined;
 
-  @HostBinding('style.--width') get width() {
+  @HostBinding('style.--ngneat-avvvatars-width') get width() {
     return this.size + 'px';
   }
-  @HostBinding('style.--height') get height() {
+  @HostBinding('style.--ngneat-avvvatars-height') get height() {
     return this.size + 'px';
   }
-  @HostBinding('style.--border-radius') get borderRadius() {
+  @HostBinding('style.--ngneat-avvvatars-border-radius') get borderRadius() {
     return (this.radius || this.size) + 'px';
   }
-  @HostBinding('style.--background-color') get backgroundColor() {
+  @HostBinding('style.--ngneat-avvvatars-background-color')
+  get backgroundColor() {
     return this.color;
   }
-  @HostBinding('style.--border') get borderStyle() {
+  @HostBinding('style.--ngneat-avvvatars-border') get borderStyle() {
     return `${this.borderSize}px solid ${this.borderColor}`;
   }
-  @HostBinding('style.--box-shadow') get boxShadow() {
+  @HostBinding('style.--ngneat-avvvatars-box-shadow') get boxShadow() {
     return this.shadow
       ? '0px 3px 8px rgba(18, 18, 18, 0.04), 0px 1px 1px rgba(18, 18, 18, 0.02)'
       : 'none';

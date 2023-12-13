@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Signal, computed, signal } from '@angular/core';
 import { Params, Style } from './types';
 import randiman from './utils/random';
 import { BACKGROUND_COLORS, TEXT_COLORS, SHAPE_COLORS } from './utils/colors';
@@ -8,16 +8,28 @@ import { ShapeComponent } from './components/shape/shape.component';
 import { DEFAULTS } from './constants';
 
 @Component({
-  selector: 'lib-avvvatars',
+  selector: 'avvvatars',
   standalone: true,
   imports: [WrapperComponent, TextComponent, ShapeComponent],
   templateUrl: './avvvatars.component.html',
-  styles: ``,
 })
 export class AvvvatarsComponent implements Params {
-  @Input() displayValue?: string | undefined;
-  @Input({ required: true }) value!: string;
-  @Input() size: number = DEFAULTS.size;
+  private _displayValue = signal<string | undefined>(undefined);
+  @Input() set displayValue(value: string | undefined) {
+    this._displayValue.set(value);
+  }
+
+  private _value = signal<string>('');
+  @Input({ required: true }) set value(value: string) {
+    this._value.set(value);
+  }
+
+  private _size = signal<number>(DEFAULTS.size);
+  @Input() set size(value: number) {
+    this._size.set(value);
+  }
+  public computedSize = computed(() => this._size());
+
   @Input() shadow: boolean = DEFAULTS.shadow;
   @Input() style: Style = DEFAULTS.style as Style;
   @Input() border: boolean = DEFAULTS.border;
@@ -30,22 +42,22 @@ export class AvvvatarsComponent implements Params {
   readonly SHAPE_COLORS = SHAPE_COLORS;
 
   // get first two letters
-  get name() {
-    return String(this.displayValue || this.value).substring(0, 2);
-  }
+  public name = computed(() => {
+    return String(this._displayValue() || this._value()).substring(0, 2);
+  });
 
   // generate unique random for given value
   // there is 20 colors in array so generate between 0 and 19
-  get key() {
-    return randiman({ value: this.value, min: 0, max: 19 });
-  }
+  public key = computed(() => {
+    return randiman({ value: this._value(), min: 0, max: 19 });
+  });
 
   // there is 60 shapes so generate between 1 and 60
-  get shapeKey() {
-    return randiman({ value: this.value, min: 1, max: 60 });
-  }
+  public shapeKey = computed(() => {
+    return randiman({ value: this._value(), min: 1, max: 60 });
+  });
 
-  get shapeSize() {
-    return Math.round((this.size / 100) * 50);
-  }
+  public shapeSize = computed(() => {
+    return Math.round((this._size() / 100) * 50);
+  });
 }

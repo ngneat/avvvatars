@@ -1,6 +1,6 @@
 <lib-wrapper
-  [size]="size"
-  [color]="BACKGROUND_COLORS[key]"
+  [size]="computedSize()"
+  [color]="BACKGROUND_COLORS[key()]"
   [shadow]="shadow"
   [border]="border"
   [borderSize]="borderSize"
@@ -8,14 +8,14 @@
   [radius]="radius"
 >
   @if (style === "character") {
-  <lib-text [color]="TEXT_COLORS[key]" [size]="size">
-    {{ name }}
+  <lib-text [color]="TEXT_COLORS[key()]" [size]="computedSize()">
+    {{ name() }}
   </lib-text>
   } @else {
   <lib-shape
-    [name]="'Shape' + shapeKey"
-    [color]="SHAPE_COLORS[key]"
-    [size]="shapeSize"
+    [name]="'Shape' + shapeKey()"
+    [color]="SHAPE_COLORS[key()]"
+    [size]="shapeSize()"
   />
   }
 </lib-wrapper>

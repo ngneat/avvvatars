@@ -2,12 +2,12 @@ export interface WrapperProps {
   size: number;
   color: string;
 
-  $shadow?: boolean;
+  shadow?: boolean;
 
-  $border?: boolean;
-  $borderSize?: number;
-  $borderColor?: string;
-  $radius?: number;
+  border?: boolean;
+  borderSize?: number;
+  borderColor?: string;
+  radius?: number;
 }
 export type Style = 'character' | 'shape';
 export interface Params {
