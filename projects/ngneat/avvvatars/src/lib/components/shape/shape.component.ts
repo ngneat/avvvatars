@@ -59,12 +59,8 @@ export class ShapeComponent implements ShapeProps {
       if (this._renderSvg()) {
         const svgKey = this._name();
         if (svgKey !== undefined) {
-          import('./all-shapes');
           const svg = this._allShapes[svgKey];
           if (svg) {
-            const svgHtml = this.sanitizer.bypassSecurityTrustHtml(
-              svg.replace('{props}', `width="${this._size()}"`)
-            );
             this.renderer.setProperty(
               this._elementRef.nativeElement,
               'innerHTML',
