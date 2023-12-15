@@ -15,12 +15,12 @@ for (let word of Object.keys(words)) {
   const filesAsArray = badFiles.split("\n");
   const tsFileRegex = /\.ts$/;
   const onlyTsFiles = filesAsArray.filter((file) =>
-    tsFileRegex.test(file.trim())
+    tsFileRegex.test(file.trim()),
   );
   if (onlyTsFiles.length) {
     status = 1;
     console.log(
-      chalk.bgRed.black.bold(`The following files contains '${word}' in them:`)
+      chalk.bgRed.black.bold(`The following files contains '${word}' in them:`),
     );
     console.log(chalk.bgRed.black(onlyTsFiles.join("\n")));
   }
