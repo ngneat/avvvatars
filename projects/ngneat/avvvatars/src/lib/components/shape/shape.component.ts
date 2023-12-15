@@ -5,12 +5,10 @@ import {
   Input,
   Renderer2,
   afterNextRender,
-  computed,
   effect,
   signal,
 } from '@angular/core';
 import { inject } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 
 export interface ShapeProps {
   name: string | undefined;
@@ -23,6 +21,7 @@ export interface ShapeProps {
   standalone: true,
   templateUrl: './shape.component.html',
   styleUrl: './shape.component.css',
+  // eslint-disable-next-line @angular-eslint/no-host-metadata-property
   host: {
     role: 'img',
   },
@@ -42,7 +41,6 @@ export class ShapeComponent implements ShapeProps {
   @Input()
   color?: string;
 
-  private sanitizer = inject(DomSanitizer);
   private renderer = inject(Renderer2);
   private _elementRef = inject(ElementRef);
   private _allShapes: Record<string, string> = {};
@@ -64,7 +62,7 @@ export class ShapeComponent implements ShapeProps {
             this.renderer.setProperty(
               this._elementRef.nativeElement,
               'innerHTML',
-              svg.replace('{props}', `width="${this._size()}"`)
+              svg.replace('{props}', `width="${this._size()}"`),
             );
           }
         }

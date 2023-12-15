@@ -1,4 +1,4 @@
-import { Component, Input, Signal, computed, signal } from '@angular/core';
+import { Component, Input, computed, signal } from '@angular/core';
 import { Params, Style } from './types';
 import randiman from './utils/random';
 import { BACKGROUND_COLORS, TEXT_COLORS, SHAPE_COLORS } from './utils/colors';
@@ -8,6 +8,7 @@ import { ShapeComponent } from './components/shape/shape.component';
 import { DEFAULTS } from './constants';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'avvvatars',
   standalone: true,
   imports: [WrapperComponent, TextComponent, ShapeComponent],

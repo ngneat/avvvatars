@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-array-constructor */
+/* eslint-disable no-var */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // Mersenne Twister from https://gist.github.com/banksean/300494
 /*
   A C-program for MT19937, with initialization improved 2002/1/26.
@@ -96,7 +99,7 @@ MersenneTwister.prototype.init_genrand = function (s: number) {
 /* slight change for C++, 2004/2/26 */
 MersenneTwister.prototype.init_by_array = function (
   init_key: any,
-  key_length: any
+  key_length: any,
 ) {
   var i = 1,
     j = 0,
