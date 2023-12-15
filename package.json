@@ -10,7 +10,6 @@
     "test": "ng test",
     "copy:readme": "cpx README.md dist/ngneat/avvvatars",
     "build:lib": "ng build @ngneat/avvvatars --configuration production && npm run copy:readme",
-    "postbuild:lib": "npm run build --prefix ./projects/ngneat/avvvatars",
     "semantic-release": "semantic-release",
     "commit": "cz",
     "hooks:pre-commit": "node hooks/pre-commit.js",
