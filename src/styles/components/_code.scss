@@ -1,7 +1,7 @@
 code,
-code[class*='language-'],
+code[class*="language-"],
 pre,
-pre[class*='language-'] {
+pre[class*="language-"] {
   font-family: var(--code-font) !important;
   font-weight: 400;
   @media (pointer: fine) {
