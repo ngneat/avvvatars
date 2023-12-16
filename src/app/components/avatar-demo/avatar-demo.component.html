@@ -1,0 +1,46 @@
+<div class="text-center">
+  <p class="headline-large mt-4">Make me an Avvvatar!</p>
+  <!-- <p class="title-large">Just change the value in input to get your Avvvatar!</p> -->
+  <div class="mb-5">
+    <avvvatars [value]="value" [style]="avStyle" [size]="200"></avvvatars>
+  </div>
+  <div role="radiogroup" class="mb-3" aria-label="Styles for avvvatars component">
+    <div class="d-inline-flex align-items-center">
+      <md-radio
+        aria-label="Shape"
+        name="style"
+        touch-target="wrapper"
+        id="shape-radio"
+        [checked]="avStyle === 'shape'"
+        value="shape"
+        (change)="setStyle($event)"
+      >
+      </md-radio>
+      <label for="shape-radio">Shape</label>
+    </div>
+    <div class="d-inline-flex align-items-center">
+      <md-radio
+        aria-label="Character"
+        name="style"
+        touch-target="wrapper"
+        id="character-radio"
+        [checked]="avStyle === 'character'"
+        value="character"
+        (change)="setStyle($event)"
+      >
+      </md-radio>
+      <label for="character-radio">Character</label>
+    </div>
+  </div>
+  <div>
+    <md-outlined-text-field
+      #input
+      label="Value goes here..."
+      [value]="value"
+      (input)="setValue($event)"
+      (click)="stopInterval()"
+      (focus)="stopInterval()"
+    >
+    </md-outlined-text-field>
+  </div>
+</div>

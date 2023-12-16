@@ -1,0 +1,18 @@
+code,
+code[class*='language-'],
+pre,
+pre[class*='language-'] {
+  font-family: var(--code-font) !important;
+  font-weight: 400;
+  @media (pointer: fine) {
+    --_scrollbar-height: 8px;
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: var(--_scrollbar-height);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--md-sys-color-primary);
+      border-radius: calc(var(--_scrollbar-width) / 2);
+    }
+  }
+}

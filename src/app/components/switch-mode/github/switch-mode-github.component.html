@@ -1,0 +1,38 @@
+<div
+  class="switch-mode-container"
+  [attr.variant]="variant"
+  (mouseenter)="move = true"
+  (mouseleave)="move = false"
+>
+  <div class="track" [class.move]="move">
+    <div
+      class="switch"
+      role="presentation"
+      (keydown.enter)="goTo()"
+      (click)="goTo()"
+    >
+      <span aria-hidden="true" class="material-symbols-outlined">star</span>
+
+      @if (variant === "full") {
+        Give us star
+      }
+    </div>
+    <div
+      class="switch"
+      role="presentation"
+      (keydown.enter)="goTo()"
+      (click)="goTo()"
+    >
+      <span
+        aria-hidden="true"
+        class="material-symbols-outlined switch-logo"
+        style="--logo-url: url(&quot;/assets/github.svg&quot;)"
+      >
+      </span>
+      @if (variant === "full") {
+        on GitHub
+      }
+    </div>
+    
+  </div>
+</div>

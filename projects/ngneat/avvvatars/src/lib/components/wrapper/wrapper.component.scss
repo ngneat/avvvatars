@@ -1,3 +1,6 @@
+:host {
+  display: var(--ngneat-avvvatars-wrapper-display, inline-block);
+}
 .wrapper {
   width: var(--ngneat-avvvatars-width);
   height: var(--ngneat-avvvatars-height);

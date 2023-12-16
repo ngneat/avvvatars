@@ -46,7 +46,14 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss",
+              {
+                "bundleName": "dark-theme",
+                "inject": false,
+                "input": "src/styles/themes/dark.scss"
+              }
+            ],
             "scripts": []
           },
           "configurations": {
@@ -98,7 +105,14 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss",
+              {
+                "bundleName": "dark-theme",
+                "inject": false,
+                "input": "src/styles/themes/dark.scss"
+              }
+            ],
             "scripts": []
           }
         },

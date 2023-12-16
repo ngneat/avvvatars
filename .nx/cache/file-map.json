@@ -1,0 +1,477 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@material/web": "^1.1.1",
+    "bootstrap": "^5.3.2",
+    "prismjs": "^1.29.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.6",
+    "@angular-eslint/builder": "17.1.1",
+    "@angular-eslint/eslint-plugin": "17.1.1",
+    "@angular-eslint/eslint-plugin-template": "17.1.1",
+    "@angular-eslint/schematics": "17.1.1",
+    "@angular-eslint/template-parser": "17.1.1",
+    "@angular/cli": "^17.0.6",
+    "@angular/compiler-cli": "^17.0.0",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/jasmine": "~5.1.0",
+    "@types/prismjs": "^1.26.3",
+    "@typescript-eslint/eslint-plugin": "6.13.1",
+    "@typescript-eslint/parser": "6.13.1",
+    "angular-cli-ghpages": "^0.6.2",
+    "chalk": "^5.3.0",
+    "cpx": "^1.5.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.54.0",
+    "husky": "^6.0.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.0",
+    "ng-packagr": "^17.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.1.1",
+    "semantic-release": "^22.0.12",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {
+    "@ngneat/avvvatars": [
+      "./dist/ngneat/avvvatars"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "16953310687313025518"
+      },
+      {
+        "file": ".github/workflows/pre-release.yaml",
+        "hash": "8215669483067504810"
+      },
+      {
+        "file": ".github/workflows/release.yaml",
+        "hash": "11982529587909490804"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13044518069027839699"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "10106645302852536800"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "8541484187245421345"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "13920495583977399819"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "720429501991387787"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "12052327372921377652"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "12590602730425304376"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "15753941481085060538"
+      },
+      {
+        "file": ".releaserc.json",
+        "hash": "17529393477551946802"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5331566439708925252"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17038929134016848735"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": "README.md",
+        "hash": "14800227938807021223"
+      },
+      {
+        "file": "angular.json",
+        "hash": "17439571679167816311"
+      },
+      {
+        "file": "assets/BE shape.png",
+        "hash": "7337760719676469033"
+      },
+      {
+        "file": "assets/BE.png",
+        "hash": "6329395472370273986"
+      },
+      {
+        "file": "assets/logo.svg",
+        "hash": "1431057947473215943"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "15089399635272455297"
+      },
+      {
+        "file": "hooks/pre-commit.js",
+        "hash": "9962711489980778368"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "16229477736395371486"
+      },
+      {
+        "file": "package.json",
+        "hash": "2394430037200962373"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/.eslintrc.json",
+        "hash": "15092599220737075764"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/README.md",
+        "hash": "4968216934457671414"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/ng-package.json",
+        "hash": "3750097135087343661"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/package.json",
+        "hash": "8638105290867730193"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/avvvatars.component.html",
+        "hash": "4602684873607612336"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/avvvatars.component.ts",
+        "hash": "14130105052988163524"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/shape/all-shapes.ts",
+        "hash": "16049091845482878760"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/shape/shape.component.css",
+        "hash": "18445070624130267938"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/shape/shape.component.html",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/shape/shape.component.ts",
+        "hash": "2366539331828050905"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/text/text.component.css",
+        "hash": "8709595237854889616"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/text/text.component.html",
+        "hash": "6094506939625674296"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/text/text.component.ts",
+        "hash": "14601354927245045381"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/wrapper/wrapper.component.html",
+        "hash": "2506815316011650611"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/wrapper/wrapper.component.scss",
+        "hash": "2384452938510006375"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/components/wrapper/wrapper.component.ts",
+        "hash": "15680895689496554343"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/constants.ts",
+        "hash": "10865884484223092875"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/types.ts",
+        "hash": "1307568889471778146"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/utils/alea.ts",
+        "hash": "14970448794441706610"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/utils/colors.ts",
+        "hash": "13897417082294470212"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/utils/mersenne_twister.ts",
+        "hash": "1584147669383796827"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/lib/utils/random.ts",
+        "hash": "499476674651235648"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/src/public-api.ts",
+        "hash": "9420811669110878876"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/tsconfig.lib.json",
+        "hash": "14482406367494498373"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/tsconfig.lib.prod.json",
+        "hash": "1939170332703490951"
+      },
+      {
+        "file": "projects/ngneat/avvvatars/tsconfig.spec.json",
+        "hash": "4978455210362549465"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "16073636053524644288"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "5513541093474770414"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "5428614352870646528"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "12397496131277534773"
+      },
+      {
+        "file": "src/app/browser-storage.service.ts",
+        "hash": "12705861430298710756"
+      },
+      {
+        "file": "src/app/code-highlight.service.ts",
+        "hash": "17467699229069703968"
+      },
+      {
+        "file": "src/app/components/actions/actions.component.html",
+        "hash": "3138692883005163694"
+      },
+      {
+        "file": "src/app/components/actions/actions.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/actions/actions.component.ts",
+        "hash": "10420016592121265778"
+      },
+      {
+        "file": "src/app/components/avatar-demo/avatar-demo.component.html",
+        "hash": "999448334557999176"
+      },
+      {
+        "file": "src/app/components/avatar-demo/avatar-demo.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/avatar-demo/avatar-demo.component.ts",
+        "hash": "10726075537544942645"
+      },
+      {
+        "file": "src/app/components/code/code.component.html",
+        "hash": "12993993765555304269"
+      },
+      {
+        "file": "src/app/components/code/code.component.ts",
+        "hash": "17315894794208031839"
+      },
+      {
+        "file": "src/app/components/cover/cover.component.html",
+        "hash": "3234395934215215180"
+      },
+      {
+        "file": "src/app/components/cover/cover.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/components/cover/cover.component.ts",
+        "hash": "10689501961269777523"
+      },
+      {
+        "file": "src/app/components/gradient-wrapper/gradient-wrapper.component.html",
+        "hash": "11894159125171823222"
+      },
+      {
+        "file": "src/app/components/gradient-wrapper/gradient-wrapper.component.scss",
+        "hash": "17817869875291238500"
+      },
+      {
+        "file": "src/app/components/gradient-wrapper/gradient-wrapper.component.ts",
+        "hash": "5304563883029020129"
+      },
+      {
+        "file": "src/app/components/installation/installation.component.html",
+        "hash": "7988966253735890605"
+      },
+      {
+        "file": "src/app/components/installation/installation.component.ts",
+        "hash": "17718691789924284625"
+      },
+      {
+        "file": "src/app/components/switch-mode/dark/switch-mode-dark.component.html",
+        "hash": "2412612365498682045"
+      },
+      {
+        "file": "src/app/components/switch-mode/dark/switch-mode-dark.component.ts",
+        "hash": "5042854588612558548"
+      },
+      {
+        "file": "src/app/components/switch-mode/github/switch-mode-github.component.html",
+        "hash": "4764220733726871059"
+      },
+      {
+        "file": "src/app/components/switch-mode/github/switch-mode-github.component.ts",
+        "hash": "9712682498647278610"
+      },
+      {
+        "file": "src/app/components/switch-mode/live/switch-mode-live.component.html",
+        "hash": "13999396818623841354"
+      },
+      {
+        "file": "src/app/components/switch-mode/live/switch-mode-live.component.ts",
+        "hash": "18310098453704175384"
+      },
+      {
+        "file": "src/app/theme-manager.service.ts",
+        "hash": "13038772059592971248"
+      },
+      {
+        "file": "src/assets/cover-dark.png",
+        "hash": "5325114179193381851"
+      },
+      {
+        "file": "src/assets/cover-light.png",
+        "hash": "12830697349703785389"
+      },
+      {
+        "file": "src/assets/github.svg",
+        "hash": "1845146754235672580"
+      },
+      {
+        "file": "src/assets/logo.svg",
+        "hash": "1431057947473215943"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "3199250099443904246"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "4927504514031276065"
+      },
+      {
+        "file": "src/styles/_utils.scss",
+        "hash": "147616722163911568"
+      },
+      {
+        "file": "src/styles/_vendors.scss",
+        "hash": "16435207125594391083"
+      },
+      {
+        "file": "src/styles/components/_code.scss",
+        "hash": "6584904679174002723"
+      },
+      {
+        "file": "src/styles/components/_switch-mode.scss",
+        "hash": "14029723014029335732"
+      },
+      {
+        "file": "src/styles/m3/_theme.dark.scss",
+        "hash": "3397496060995461733"
+      },
+      {
+        "file": "src/styles/m3/_theme.light.scss",
+        "hash": "11529389765676625585"
+      },
+      {
+        "file": "src/styles/m3/colors.css",
+        "hash": "8354767825215187105"
+      },
+      {
+        "file": "src/styles/m3/theme.css",
+        "hash": "7413545291069298898"
+      },
+      {
+        "file": "src/styles/m3/tokens.css",
+        "hash": "18216229515795802182"
+      },
+      {
+        "file": "src/styles/m3/typography.css",
+        "hash": "4515643151139735140"
+      },
+      {
+        "file": "src/styles/themes/dark.scss",
+        "hash": "4606423515019369897"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "1980175940887961499"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "17337579397915052279"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "13511667921391804863"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "15575553540147145788"
+      }
+    ]
+  }
+}
