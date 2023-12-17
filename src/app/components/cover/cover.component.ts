@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { ThemeManager } from '../../theme-manager.service';
+import { Component } from '@angular/core';
 import { AsyncPipe, NgStyle } from '@angular/common';
 import { GradientWrapperComponent } from '../gradient-wrapper/gradient-wrapper.component';
 import { SwitchModeGitHubComponent } from '../switch-mode/github/switch-mode-github.component';
@@ -16,10 +15,4 @@ import { SwitchModeGitHubComponent } from '../switch-mode/github/switch-mode-git
   templateUrl: './cover.component.html',
   styleUrl: './cover.component.scss',
 })
-export class CoverComponent {
-  themeManager = inject(ThemeManager);
-  isDark$ = this.themeManager.isDark$;
-
-  darkCover = '/assets/cover-dark.png';
-  lightCover = '/assets/cover-light.png';
-}
+export class CoverComponent {}
