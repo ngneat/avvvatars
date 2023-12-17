@@ -52,9 +52,7 @@
     "typescript": "~5.2.2"
   },
   "pathMappings": {
-    "@ngneat/avvvatars": [
-      "./dist/ngneat/avvvatars"
-    ]
+    "@ngneat/avvvatars": ["./dist/ngneat/avvvatars"]
   },
   "nxJsonPlugins": [],
   "fileMap": {
