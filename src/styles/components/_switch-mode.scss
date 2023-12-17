@@ -45,11 +45,10 @@
       }
     }
   }
-
-  .switch-logo {
-    height: 24px;
-    width: 24px;
-    mask: var(--logo-url);
-    background-color: currentColor;
-  }
+}
+.switch-logo {
+  height: 24px;
+  width: 24px;
+  mask: var(--logo-url);
+  background-color: currentColor;
 }

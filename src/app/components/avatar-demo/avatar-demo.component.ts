@@ -48,7 +48,7 @@ export class AvatarDemoComponent implements AfterViewInit {
         this.value = this.displayValue.slice(0, this.value.length + 1);
         if (this.value === this.displayValue) {
           this.stopInterval();
-          this.input.nativeElement.focus();
+          // this.input.nativeElement.focus();
         }
       }
     }, 300);

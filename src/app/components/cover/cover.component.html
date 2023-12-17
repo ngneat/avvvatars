@@ -23,8 +23,22 @@
         <li class="g-col-6 g-col-md-4 fw-medium">🤠 Unique to user</li>
         <li class="g-col-6 g-col-md-4 fw-medium">✍️ Customizable</li>
       </ul>
-      <div class="w-50 mt-auto">
-        <app-switch-mode-github variant="full"></app-switch-mode-github>
+      <app-switch-mode-github
+        variant="full"
+        class="d-none d-md-flex mt-auto"
+      ></app-switch-mode-github>
+      <div class="d-block d-md-none mt-auto">
+        <md-filled-button>
+          <span
+            aria-hidden="true"
+            class="material-symbols-outlined switch-logo align-middle"
+            style="
+              --logo-url: url(&quot;https://raw.githubusercontent.com/ngneat/avvvatars/main/src/assets/github.svg&quot;);
+            "
+          >
+          </span>
+          Give us star on GitHub
+        </md-filled-button>
       </div>
     </div>
   </div>
