@@ -20,7 +20,7 @@
 
 > Beautifully crafted unique avatar placeholder for your next angular project. Inspired from [avvvatars](https://github.com/nusu/avvvatars)
 
-![demo](assets/demo.mp4?raw=true)
+https://github.com/ngneat/avvvatars/assets/6831283/c6cdd732-3037-4732-8019-4f4906076a51
 
 ## Compatibility with Angular Versions
 
