@@ -43,15 +43,14 @@ export class AvatarDemoComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    // TODO: @shhdharmen un-comment below for demo
-    // this.int = setInterval(() => {
-    //   if (this.value !== this.displayValue) {
-    //     this.value = this.displayValue.slice(0, this.value.length + 1);
-    //     if (this.value === this.displayValue) {
-    //       this.stopInterval();
-    //       this.input.nativeElement.focus();
-    //     }
-    //   }
-    // }, 300);
+    this.int = setInterval(() => {
+      if (this.value !== this.displayValue) {
+        this.value = this.displayValue.slice(0, this.value.length + 1);
+        if (this.value === this.displayValue) {
+          this.stopInterval();
+          this.input.nativeElement.focus();
+        }
+      }
+    }, 300);
   }
 }
