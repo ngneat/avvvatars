@@ -23,6 +23,6 @@ jobs:
         run: |
           npm ci
           npm run build:lib
-          npm run build
+          npm run build --base-href "/avvvatars/"
           npx semantic-release
           npx angular-cli-ghpages --no-silent --name="mr. Dharmen's Bot" --email=shhdharmen@gmail.com --dir=dist/avvvatars/browser

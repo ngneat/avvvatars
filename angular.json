@@ -116,10 +116,6 @@
             "scripts": []
           }
         },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
-        },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
