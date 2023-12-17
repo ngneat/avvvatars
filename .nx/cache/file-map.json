@@ -32,6 +32,7 @@
     "@types/prismjs": "^1.26.3",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
+    "all-contributors-cli": "^6.26.1",
     "angular-cli-ghpages": "^0.6.2",
     "chalk": "^5.3.0",
     "cpx": "^1.5.0",
@@ -52,12 +53,18 @@
     "typescript": "~5.2.2"
   },
   "pathMappings": {
-    "@ngneat/avvvatars": ["./dist/ngneat/avvvatars"]
+    "@ngneat/avvvatars": [
+      "./dist/ngneat/avvvatars"
+    ]
   },
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {},
     "nonProjectFiles": [
+      {
+        "file": ".all-contributorsrc",
+        "hash": "6183347518090972339"
+      },
       {
         "file": ".editorconfig",
         "hash": "6686520031028425313"
@@ -88,7 +95,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "16611791175685239015"
+        "hash": "14710896368772711515"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -123,8 +130,24 @@
         "hash": "5336636969995539451"
       },
       {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "3572819850791519251"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "14693736693731331207"
+      },
+      {
+        "file": "ISSUE_TEMPLATE.md",
+        "hash": "12703437588677596442"
+      },
+      {
+        "file": "PULL_REQUEST_TEMPLATE.md",
+        "hash": "13679251603219011606"
+      },
+      {
         "file": "README.md",
-        "hash": "14800227938807021223"
+        "hash": "9704346260784421728"
       },
       {
         "file": "angular.json",
@@ -137,6 +160,10 @@
       {
         "file": "assets/BE.png",
         "hash": "6329395472370273986"
+      },
+      {
+        "file": "assets/demo.mp4",
+        "hash": "2135829592488752523"
       },
       {
         "file": "assets/logo.svg",
@@ -152,11 +179,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "16229477736395371486"
+        "hash": "13098516692538683150"
       },
       {
         "file": "package.json",
-        "hash": "2394430037200962373"
+        "hash": "441514960985341965"
       },
       {
         "file": "projects/ngneat/avvvatars/.eslintrc.json",
@@ -324,7 +351,7 @@
       },
       {
         "file": "src/app/components/cover/cover.component.html",
-        "hash": "2500484889642692214"
+        "hash": "17627642333726728755"
       },
       {
         "file": "src/app/components/cover/cover.component.scss",
@@ -348,7 +375,7 @@
       },
       {
         "file": "src/app/components/gradient-wrapper/gradient-wrapper.component.scss",
-        "hash": "10486059936370410529"
+        "hash": "18397092577998202395"
       },
       {
         "file": "src/app/components/gradient-wrapper/gradient-wrapper.component.ts",
@@ -436,7 +463,7 @@
       },
       {
         "file": "src/styles/_utils.scss",
-        "hash": "1781094262828092023"
+        "hash": "9522155317300858124"
       },
       {
         "file": "src/styles/_vendors.scss",
