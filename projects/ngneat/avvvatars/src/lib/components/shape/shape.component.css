@@ -1,0 +1,7 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+
+  color: var(--ngneat-avvvatars-color, currentColor);
+}

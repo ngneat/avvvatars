@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./styles/m3/theme.light" as m3-light;
+@use "./styles/vendors";
+@use "./styles/utils";
+@use "./styles/components/switch-mode";
+@use "./styles/components/code";
+@use "./styles/components/gradient-wrapper";
+@import url(./styles/m3/theme.css);
+
+:root:not(.dark-theme) {
+  @include m3-light.m3-light-theme;
+}
+
+html {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: var(--inter-font);
+  font-size: 16px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+body {
+  margin: 0;
+}

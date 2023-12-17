@@ -1,0 +1,6 @@
+@use "../m3/theme.dark" as m3-dark;
+.dark-theme {
+  &:root {
+    @include m3-dark.m3-dark-theme;
+  }
+}

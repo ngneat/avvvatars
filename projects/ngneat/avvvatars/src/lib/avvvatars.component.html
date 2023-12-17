@@ -1,0 +1,21 @@
+<lib-wrapper
+  [size]="computedSize()"
+  [color]="BACKGROUND_COLORS[key()]"
+  [shadow]="shadow"
+  [border]="border"
+  [borderSize]="borderSize"
+  [borderColor]="borderColor"
+  [radius]="radius"
+>
+  @if (style === "character") {
+  <lib-text [color]="TEXT_COLORS[key()]" [size]="computedSize()">
+    {{ name() }}
+  </lib-text>
+  } @else {
+  <lib-shape
+    [name]="'Shape' + shapeKey()"
+    [color]="SHAPE_COLORS[key()]"
+    [size]="shapeSize()"
+  />
+  }
+</lib-wrapper>

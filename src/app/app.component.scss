@@ -1,0 +1,34 @@
+.main-grid {
+  box-sizing: border-box;
+  overflow: auto;
+  width: 100%;
+  height: calc(100dvh - var(--bs-border-radius-xl) * 2);
+  border-radius: var(--bs-border-radius-xxl);
+
+  .scroll-wrapper {
+    // padding-block: calc(var(--bs-border-radius-xl) * 4);
+    overflow-y: auto;
+    max-height: 100%;
+    border-radius: inherit;
+    box-sizing: border-box;
+  }
+
+  @media (pointer: fine) {
+    --_scrollbar-width: 8px;
+    .scroll-wrapper::-webkit-scrollbar {
+      background-color: transparent;
+      width: var(--_scrollbar-width);
+    }
+    .scroll-wrapper::-webkit-scrollbar-thumb {
+      background-color: var(--md-sys-color-primary);
+      border-radius: calc(var(--_scrollbar-width) / 2);
+    }
+  }
+}
+
+.actions-container {
+  width: 84px;
+  //   @media (max-width: 768px) {
+  //     width: 60px;
+  //   }
+}

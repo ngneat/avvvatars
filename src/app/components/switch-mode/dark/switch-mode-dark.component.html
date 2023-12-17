@@ -1,0 +1,30 @@
+<div class="switch-mode-container" [attr.variant]="variant">
+  <div class="track" [class.move]="(isDark$ | async) === true">
+    <div
+      class="dark-mode switch"
+      role="presentation"
+      (keydown.enter)="changeTheme('dark')"
+      (click)="changeTheme('dark')"
+    >
+      <span aria-hidden="true" class="material-symbols-outlined"
+        >dark_mode</span
+      >
+      @if (variant === "full") {
+        Switch to dark mode
+      }
+    </div>
+    <div
+      class="switch"
+      role="presentation"
+      (keydown.enter)="changeTheme('dark')"
+      (click)="changeTheme('light')"
+    >
+      <span aria-hidden="true" class="material-symbols-outlined"
+        >light_mode</span
+      >
+      @if (variant === "full") {
+        Switch to light mode
+      }
+    </div>
+  </div>
+</div>

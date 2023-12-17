@@ -1,0 +1,34 @@
+<div
+  class="switch-mode-container"
+  [attr.variant]="variant"
+  (mouseenter)="move = true"
+  (mouseleave)="move = false"
+>
+  <div class="track" [class.move]="move">
+    <div
+      class="switch"
+      role="presentation"
+      (keydown.enter)="goTo()"
+      (click)="goTo()"
+    >
+      <span aria-hidden="true" class="material-symbols-outlined"
+        >play_arrow</span
+      >
+
+      @if (variant === "full") {
+        Play
+      }
+    </div>
+    <div
+      class="switch"
+      role="presentation"
+      (keydown.enter)="goTo()"
+      (click)="goTo()"
+    >
+      <span aria-hidden="true" class="material-symbols-outlined"> bolt </span>
+      @if (variant === "full") {
+        live demo
+      }
+    </div>
+  </div>
+</div>
