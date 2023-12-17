@@ -31,6 +31,6 @@ jobs:
         run: |
           npm run lint
           npm run build:lib
-          npm run build --base-href "/avvvatars/"
+          npm run build -- --base-href "/avvvatars/"
           # npm run test
           npx semantic-release --debug
