@@ -1,0 +1,198 @@
+.main-gradient-container {
+    position: relative;
+    isolation: isolate;
+  }
+  
+  .bottom-gradient,
+  .bottom-gradient-child,
+  .top-gradient,
+  .top-gradient-child {
+    --na-border-spacing-x: 0;
+    --na-bg-opacity: 1;
+    --na-border-spacing-y: 0;
+    --na-translate-y: 0;
+    --na-skew-x: 0;
+    --na-skew-y: 0;
+    --na-scale-x: 1;
+    --na-scale-y: 1;
+    --na-pan-x: ;
+    --na-pan-y: ;
+    --na-pinch-zoom: ;
+    --na-scroll-snap-strictness: proximity;
+    --na-ordinal: ;
+    --na-slashed-zero: ;
+    --na-numeric-figure: ;
+    --na-numeric-spacing: ;
+    --na-numeric-fraction: ;
+    --na-ring-inset: ;
+    --na-ring-offset-width: 0px;
+    --na-ring-offset-color: #fff;
+    --na-ring-color: rgb(59 130 246 / 0.5);
+    --na-ring-offset-shadow: 0 0 #0000;
+    --na-ring-shadow: 0 0 #0000;
+    --na-shadow: 0 0 #0000;
+    --na-shadow-colored: 0 0 #0000;
+    --na-brightness: ;
+    --na-contrast: ;
+    --na-grayscale: ;
+    --na-hue-rotate: ;
+    --na-invert: ;
+    --na-saturate: ;
+    --na-sepia: ;
+    --na-drop-shadow: ;
+    --na-backdrop-blur: ;
+    --na-backdrop-brightness: ;
+    --na-backdrop-contrast: ;
+    --na-backdrop-grayscale: ;
+    --na-backdrop-hue-rotate: ;
+    --na-backdrop-invert: ;
+    --na-backdrop-opacity: ;
+    --na-backdrop-saturate: ;
+    --na-backdrop-sepia: ;
+  }
+  .top-gradient {
+    --na-translate-x: 0;
+    --na-rotate: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    transform: translate3d(var(--na-translate-x), var(--na-translate-y), 0)
+      rotate(var(--na-rotate)) skewX(var(--na-skew-x)) skewY(var(--na-skew-y))
+      scaleX(var(--na-scale-x)) scaleY(var(--na-scale-y));
+    overflow: hidden;
+    --na-blur: blur(64px);
+    filter: var(--na-blur) var(--na-brightness) var(--na-contrast)
+      var(--na-grayscale) var(--na-hue-rotate) var(--na-invert) var(--na-saturate)
+      var(--na-sepia) var(--na-drop-shadow);
+    top: -20rem;
+  }
+  
+  .bottom-gradient,
+  .bottom-gradient-child,
+  .top-gradient-child {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-variation-settings: normal;
+    line-height: inherit;
+    font-family:
+      Inter var,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji";
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+  }
+  
+  .top-gradient-child {
+    --na-blur: ;
+    position: relative;
+    aspect-ratio: 1155/678;
+    --na-translate-x: -50%;
+    --na-rotate: 30deg;
+    transform: translate(var(--na-translate-x), var(--na-translate-y))
+      rotate(var(--na-rotate)) skewX(var(--na-skew-x)) skewY(var(--na-skew-y))
+      scaleX(var(--na-scale-x)) scaleY(var(--na-scale-y));
+    background-image: linear-gradient(to top right, var(--na-gradient-stops));
+    --na-gradient-from: #ff80b5 var(--na-gradient-from-position);
+    --na-gradient-from-position: ;
+    --na-gradient-stops: var(--na-gradient-from), var(--na-gradient-to);
+    --na-gradient-to: #9089fc var(--na-gradient-to-position);
+    --na-gradient-to-position: ;
+    opacity: 0.3;
+    left: calc(50% - 30rem);
+    width: 72.1875rem;
+    clip-path: polygon(
+      74.1% 44.1%,
+      100% 61.6%,
+      97.5% 26.9%,
+      85.5% 0.1%,
+      80.7% 2%,
+      72.5% 32.5%,
+      60.2% 62.4%,
+      52.4% 68.1%,
+      47.5% 58.3%,
+      45.2% 34.5%,
+      27.5% 76.7%,
+      0.1% 64.9%,
+      17.9% 100%,
+      27.6% 76.8%,
+      76.1% 97.7%,
+      74.1% 44.1%
+    );
+  }
+  
+  .bottom-gradient,
+  .bottom-gradient-child {
+    --na-rotate: 0;
+  }
+  
+  .bottom-gradient {
+    --na-translate-x: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    transform: translate3d(var(--na-translate-x), var(--na-translate-y), 0)
+      rotate(var(--na-rotate)) skewX(var(--na-skew-x)) skewY(var(--na-skew-y))
+      scaleX(var(--na-scale-x)) scaleY(var(--na-scale-y));
+    overflow: hidden;
+    --na-blur: blur(64px);
+    filter: var(--na-blur) var(--na-brightness) var(--na-contrast)
+      var(--na-grayscale) var(--na-hue-rotate) var(--na-invert) var(--na-saturate)
+      var(--na-sepia) var(--na-drop-shadow);
+    top: calc(100% - 30rem);
+  }
+  
+  .bottom-gradient-child {
+    --na-blur: ;
+    position: relative;
+    aspect-ratio: 1155/678;
+    --na-translate-x: -50%;
+    transform: translate(var(--na-translate-x), var(--na-translate-y))
+      rotate(var(--na-rotate)) skewX(var(--na-skew-x)) skewY(var(--na-skew-y))
+      scaleX(var(--na-scale-x)) scaleY(var(--na-scale-y));
+    background-image: linear-gradient(to top right, var(--na-gradient-stops));
+    --na-gradient-from: #ff80b5 var(--na-gradient-from-position);
+    --na-gradient-from-position: ;
+    --na-gradient-stops: var(--na-gradient-from), var(--na-gradient-to);
+    --na-gradient-to: #9089fc var(--na-gradient-to-position);
+    --na-gradient-to-position: ;
+    opacity: 0.3;
+    left: calc(50% + 36rem);
+    width: 72.1875rem;
+    clip-path: polygon(
+      74.1% 44.1%,
+      100% 61.6%,
+      97.5% 26.9%,
+      85.5% 0.1%,
+      80.7% 2%,
+      72.5% 32.5%,
+      60.2% 62.4%,
+      52.4% 68.1%,
+      47.5% 58.3%,
+      45.2% 34.5%,
+      27.5% 76.7%,
+      0.1% 64.9%,
+      17.9% 100%,
+      27.6% 76.8%,
+      76.1% 97.7%,
+      74.1% 44.1%
+    );
+  }
+  
